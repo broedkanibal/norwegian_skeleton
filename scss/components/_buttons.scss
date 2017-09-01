@@ -1,0 +1,90 @@
+/* 
+============================================
+GENERAL BUTTONS STYLING
+============================================
+*/
+
+.btn {
+    padding: 20px 49px 14px 12px;
+    position: relative;
+    border-radius: 0px;
+    font-size: 1.6rem;
+    margin-bottom: 7px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    &:disabled,
+    &.disabled {
+        cursor: default;
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        bottom: -7px;
+        left: 0;
+    }
+}
+
+
+/* 
+============================================
+PRIMARY BUTTONS
+============================================
+*/
+
+.btn--primary {
+    background-color: $brand-red;
+    color: #fff;
+    &:hover {
+        background-color: $brand-red--dark;
+    }
+    &:focus,
+    &.focus {}
+    &:disabled,
+    &.disabled {
+        background-color: $brand-red--transparent;
+        &:hover,
+        &:focus {}
+    }
+    &:after {
+        background-color: $brand-blue;
+    }
+}
+
+
+/* 
+============================================
+SECONDARY BUTTONS
+============================================
+*/
+
+.btn--secondary {
+    background-color: $gray--light;
+    color: $brand-blue;
+    &:hover {
+        background-color: $gray--mid-light;
+    }
+    &:focus,
+    &.focus {}
+    &:after {
+        background-color: $gray;
+    }
+}
+
+
+/* 
+============================================
+LINK BUTTONS
+============================================
+*/
+
+.btn--link {
+    &:hover {}
+    &:focus,
+    &.focus {}
+    &:disabled,
+    &.disabled {}
+}

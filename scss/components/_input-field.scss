@@ -1,0 +1,35 @@
+//.input-field {
+//	font-size: 1.4rem;
+//	width: 100%;
+//	margin-bottom: 10px;
+//	border: none;
+//	border-bottom-width: 1px;
+//	border-bottom-style: solid;
+//	border-bottom-color: lighten(grey, 30%);
+//
+//	&:focus {
+//		border-color: #008580;
+//	}
+//}
+.input-field {
+    position: relative;
+    border: none;
+    width: 100%;
+    padding: 18px 14px 18px 12px;
+    border-radius: 0px;
+    border: 3px solid #fff;
+    &:focus {
+//        border: 3px solid $brand-blue;
+    }
+    &:after {
+        content: "";
+        display: block;
+        float: left;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        top: -7px;
+        left: 0;
+        background-color: $brand-red;
+    }
+}

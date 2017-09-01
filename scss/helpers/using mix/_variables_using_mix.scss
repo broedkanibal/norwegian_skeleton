@@ -1,0 +1,62 @@
+/* 
+============================================
+COLOR PALETTE
+============================================
+*/
+
+$color-palette: (
+	'primary': #F17037,
+	'accent': #05A690,
+	'secondary': #C45B2D,
+	'foreground': #424242,
+	'background': #FAF8F2
+);
+
+$opacity-level: (
+	'dark': 0.8,
+	'light': 0.4,
+	'ghost': 0
+);
+
+$primary-color: get-color('primary');
+$primary-color--tinted: mix(white, $primary-color, 10%); 
+$primary-color--shaded: mix(black, $primary-color, 10%);
+$primary-color--extra-shaded: mix(black, $primary-color, 20%);
+
+$accent-color: get-color('accent');
+$accent-color--tinted: mix(white, $accent-color, 10%); 
+$accent-color--shaded: mix(black, $accent-color, 10%);
+
+$secondary-color: get-color('secondary');
+$secondary-color--tinted: mix(white, $secondary-color, 10%); 
+$secondary-color--shaded: mix(black, $secondary-color, 10%);
+
+$foreground-color: get-color('foreground');
+$foreground-color--tinted: mix(white, $foreground-color, 10%); 
+$foreground-color--shaded: mix(black, $foreground-color, 10%);
+
+$background-color: get-color('background');
+$background-color--tinted: mix(white, $background-color, 10%); 
+$background-color--shaded: mix(black, $background-color, 10%);
+
+
+
+/* 
+============================================
+TEXT COLORS
+============================================
+*/
+$color-text: #212121;
+$color-text--light: #737373;
+$color-text--lightest: #B5B5B5;
+
+$color-divider: #D9D9D9;
+
+
+/* 
+============================================
+FONT SIZES
+============================================
+*/
+
+$base-font-size: 10px;

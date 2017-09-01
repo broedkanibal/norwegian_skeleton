@@ -1,0 +1,153 @@
+//@import url(../font/css/font-awesome);
+@font-face {
+    font-family: "fontawesome";
+    src: url("../font/fonts/fontawesome-webfont.eot") format("eot"),
+         url("../font/fonts/fontawesome-webfont.svg") format("svg"),
+         url("../font/fonts/fontawesome-webfont.ttf") format("truetype"),
+         url("../font/fonts/fontawesome-webfont.woff") format("woff"),
+         url("../font/fonts/fontawesome-webfont.woff2") format("woff2"),
+        url("../font/fonts/FontAwesome.otf") format("otf");
+}
+
+@mixin cssSprite( $spriteVals ) {
+	width: nth( $spriteVals, 1 );
+	height: nth( $spriteVals, 2 );
+	background-repeat: no-repeat;
+	background-image: url( #{ nth( $spriteVals, 3 ) } );
+	background-position: nth( $spriteVals, 4 ) nth( $spriteVals, 5 );
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ) {
+		background-image: url( #{ nth( $spriteVals, 6 ) } );
+		background-size: $bgiSizeW $bgiSizeH;
+	}
+}
+$icons-spritePath: '../img/icons-sprite';
+$icons-spriteURL: $icons-spritePath + '.png';
+$icons-spritex2URL: $icons-spritePath + '@2.png';
+$bgiSizeW: 183px;
+$bgiSizeH: 84px;
+$custom-caret-both: 21px 36px $icons-spriteURL -110px -10px $icons-spritex2URL;
+$custom-caret-up: 21px 36px $icons-spriteURL -64px -10px $icons-spritex2URL;
+$custom-caret-down: 21px 36px $icons-spriteURL -18px -10px $icons-spritex2URL;
+$icons-spriteList: $custom-caret-both custom-caret-both, $custom-caret-up custom-caret-up, $custom-caret-down custom-caret-down;
+@each $icon in $icons-spriteList {
+	$icons-spriteName: nth( $icon, 2 );
+	$icons-spriteClass: nth( $icon, 1 );
+	.icon-#{$icons-spriteName} {
+		@include cssSprite( $icons-spriteClass );
+	}
+}
+
+/* 
+============================================
+COLORS
+============================================
+*/
+
+/*Color palettes*/
+/*$color-palettes: (
+	'red': (
+		'base': #da1234,
+		'dark': #c3102e,
+		'transparent': #ec8899,
+		'lo-sat-transparent': #d1adb5
+	),
+	'blue': (
+		'base': #003d51,
+		'dark': #002a38,
+		'transparent': #71909b
+	),
+	'gray': (
+		'x-light': hsl(0, 0%, 95%),
+		'light': hsl(0, 0%, 85%),
+		'mid-light': hsl(0, 0%, 76%),
+		'base': hsl(0, 0%, 67%),
+		'dark': hsl(0, 0%, 56%),
+		'x-dark': hsl(0, 0%, 20%)
+	)
+);
+$color-palette-key: 'base' !default;*/
+
+
+/*Opacity colors*/
+/*$opacity-level: (
+	'dark': 0.8,
+	'light': 0.4,
+	'ghost': 0
+);*/
+
+
+/* 
+========================================================================================
+COLORS
+========================================================================================
+*/
+
+$gray-base: #000 !default;
+$gray--extra-dark: lighten($gray-base, 20%);
+$gray--dark: lighten($gray-base, 56%);
+$gray: lighten($gray-base, 67%);
+$gray--mid-light: lighten($gray-base, 76%);
+$gray--light: lighten($gray-base, 85%);
+$gray--extra-light: lighten($gray-base, 95%);
+
+$brand-red: #da1234;
+$brand-red--dark: #C3102E;
+$brand-red--transparent: #EC8899;
+$brand-red--lo-sat-transparent: #D1ADB5;
+
+$brand-blue: #003d51;
+$brand-blue--dark: #002a38;
+$brand-blue--lo-sat-transparent: #71909b;
+
+$shadow-color: rgba(0,0,0,0.5);
+
+
+/* 
+========================================================================================
+GLOBAL COLORS
+========================================================================================
+*/
+
+$body-bg: $gray--extra-light;
+$text-color: $gray--extra-dark;
+
+$link-color: $brand-red--dark;
+$link-color--hover: $brand-blue;
+$link-decoration--hover: underline;
+
+/* 
+========================================================================================
+Z LEVELS
+========================================================================================
+*/
+
+//Header 100
+//Nav 50
+//Content 10
+
+
+
+/* 
+========================================================================================
+GLOBAL TYPOGRAPHY
+========================================================================================
+*/
+
+$font-family-base: 'Helvetica Nueue',Helvetica,Arial, sans-serif;
+$fontawesome: 'fontawesome';
+
+$font-size-base: 16px;
+
+$font-size-h1:            2.4rem;
+$font-size-h2:            2rem;
+$font-size-h3:            1.8rem;
+$font-size-h4:            1.6rem;
+$font-size-h5:            1.4rem;
+$font-size-h6:            1.2rem;
+
+$line-height-base:        1.428571429;
+          
+$headings-font-weight:    500;
+$headings-line-height:    1.1;
+$headings-color:          $brand-blue;
+

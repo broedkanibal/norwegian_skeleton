@@ -1,0 +1,14 @@
+//section {
+//    @include outer-container;
+//    height: 100px;
+//    aside {
+//        @include span-columns(3);
+//        background-color: green;
+//        height: 100%;
+//    }
+//    article {
+//        @include span-columns(9);
+//        background-color: blue;
+//        height: 100%;
+//    }
+//}

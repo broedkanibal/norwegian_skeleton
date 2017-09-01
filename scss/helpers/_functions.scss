@@ -1,0 +1,19 @@
+        /* 
+============================================
+COLOR FUNCTIONS
+============================================ 
+*/
+
+/*@function get-color($palette, $tone: 'base') {
+    @return map-get(map-get($color-palettes, $palette), $tone);
+}*/
+
+/*@function palette($name, $tone: $color-palette-key) {
+    $color: null;
+   	$color-spectrum: map-get($color-palettes, $name);
+
+    @if $color-spectrum {
+    	$color: map-get($color-spectrum, $tone);
+    }
+    @return $color;
+}*/

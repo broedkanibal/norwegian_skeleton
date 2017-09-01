@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic skeleton</title>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        //<!--    <script src="http://code.angularjs.org/1.2.13/angular.js">
+    </script>-->
+</head>
+
+<body ng-app="my-app">
+
+    <!-- Header -->
+    <header class="header">
+
+
+        <div class="menu-icon-container pull-left">
+            <div class="menu-icon-container__icon pull-left"><i class="fa fa-navicon fa-2x icon-hamburger"></i></div>
+            <span class="menu-icon-container__text">Menu</span>
+        </div>
+        <div class="logo pull-right"></div>
+        <div class="header-login pull-right">
+            <i class="fa fa-user"></i>
+            <a href="#" class="header-login__label">Login</a>
+        </div>
+        <div class="header-search pull-right">
+            <i class="fa fa-search"></i>
+            <a href="#" class="header-search__label">Search</a>
+        </div>
+        
+    </header>
+    <!-- Header -->
+    <!-- Side navigation -->
+    <nav class="nav">
+        <div class="left-nav">
+            <ul>
+                <li class="nav__item">Home</li>
+                <li class="nav__item">Booking</li>
+                <li class="nav__item">Destination</li>
+                <li class="nav__item">Flight status</li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <h1>Travelling with us</h1>
+            <div class="right-nav__item">
+                <i class="fa fa-plane fa-2x"></i>
+                <h2>Item 1</h2>
+                <p></p>
+            </div>
+            <div class="right-nav__item">
+                <i class="fa fa-plane fa-2x"></i>
+                <h2>Item 2</h2>
+                <p></p>
+            </div>
+            <div class="right-nav__item">
+                <i class="fa fa-plane fa-2x"></i>
+                <h2>Item 3</h2>
+                <p></p>
+            </div>
+            <div class="right-nav__item">
+                <i class="fa fa-plane fa-2x"></i>
+                <h2>Item 4</h2>
+                <p></p>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Side navigation -->
+    <!-- Content -->
+
+    <div class="maincontent">
+        <section class="tab-box-section">
+            <!-- Tab box -->
+            <div class="tab-box">
+                <!-- Tabs -->
+                <ul class="tab-box__tabs clearfix">
+                    <li class="tab-box__tab is-selected"><i class="fa fa-plane fa-2x"></i> Flight</li>
+                    <li class="tab-box__tab"><i class="fa fa-plane fa-2x"></i> Flight + Hotel</li>
+                    <li class="tab-box__tab"><i class="fa fa-plane fa-2x"></i> Car rentals</li>
+                    <li class="tab-box__tab"><i class="fa fa-plane fa-2x"></i> Hotels</li>
+                    <li class="tab-box__tab"><i class="fa fa-plane fa-2x"></i> Reward</li>
+                </ul>
+                <!-- Tabs -->
+
+                <!-- Tab content -->
+                <div class="tab-box__content">
+                    <form action="">
+                        <fieldset>
+                            <div class="tab-box__form-group">
+                                <label for="">Fly from</label>
+                                <input type="text" class="input-field" placeholder="Your favourite airport ">
+                            </div>
+                            <div class="tab-box__form-group">
+                                <label for="Fly to">Fly to</label>
+                                <input type="text" class="input-field" placeholder="Where do you want to go?">
+                            </div>
+                        </fieldset>
+                        <div class="auto-suggestions">
+                            <a href="" class="btn-link">London</a>
+                        </div>
+                        <button class="btn btn--primary">Search and book</button>
+                    </form>
+
+                </div>
+                <!-- Tab content -->
+            </div>
+            <!-- Tab box -->
+        </section>
+
+        <section class="section">
+            <svg id="hamburger-icon" width="22px" height="21px" viewBox="25 15 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(25.000000, 15.000000)">
+                    <rect class="rect1" x="0" y="0" width="22" height="5" rx="2.5"></rect>
+                    <rect class="rect2" x="0" y="8" width="22" height="5" rx="2.5"></rect>
+                    <rect class="rect3" x="0" y="16" width="22" height="5" rx="2.5"></rect>
+                </g>
+            </svg>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+        </section>
+        <section class="section"></section>
+        <section class="section"></section>
+        <button class="btn">Primary button</button>
+        <button class="btn btn--primary">Primary button</button>
+        <button class="btn btn--secondary">Secondary button</button>
+        <button class="btn btn--primary disabled">Disabled button</button>
+        <button class="btn btn--primary disabled">Disabled button</button>
+        <!-- Form -->
+        <!-- Form -->
+
+    </div>
+    <!-- Content -->
+    <footer class="footer">
+        <p>This is the footer</p>
+        {{5+6}}
+    </footer>
+</body>
+
+</html>

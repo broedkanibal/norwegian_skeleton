@@ -1,0 +1,67 @@
+#maincontent {
+    background-color: $gray--extra-light;
+}
+
+.tab-box-section {
+    background-image: url(../images/front-header.jpg);
+    height: 100%;
+}
+.tab-box {
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 75%;
+}
+
+.tab-box__tabs {
+//    @include span-columns(12);
+//    @include omega;
+}
+
+.tab-box__tab {
+    display: block;
+    float: left;
+    position: relative;
+    background-color: $brand-blue;
+    margin: 7px 3px 1px 0px;
+    padding: 14px 40px;
+    color: #fff;
+    &:hover {
+        background-color: $brand-blue--dark;
+        border-color: $brand-blue--dark;
+        cursor: pointer;
+    }
+    
+    &:after {
+        content: "";
+        display: block;
+        float: left;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        top: -7px;
+        left: 0;
+        background-color: $brand-red;
+    }
+}
+
+.tab-box__content {
+    @include outer-container;
+    @include pad(default);
+//    padding: 20px;
+    background-color: $gray--light;
+    @include box-shadow(5px, 5px, 10px, 5px, $shadow-color);
+}
+
+.tab-box__form-group {
+    @include span-columns(6);
+}
+
+.tab-box__input-icon {
+    height: 50px;
+    width: 20px;
+    background-color: #fff;
+}
+
+
+btn-link {}

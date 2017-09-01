@@ -1,0 +1,21 @@
+/* 
+============================================
+COLOR FUNCTIONS
+============================================ 
+*/
+
+
+@function get-color($key: 'primary') {
+  @return map-get($color-palette, $key);
+}
+
+
+@function get-color-alpha($name: 'primary', $opacity: 0) {
+	$color: get-color($name);
+
+  	@if map-has-key($opacity-level, $opacity) {
+    	$opacity: map-get($opacity-level, $opacity);
+    }
+
+  	@return rgba($color, $opacity);
+}
